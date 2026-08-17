@@ -1,0 +1,18 @@
+[build-system]
+requires = ["maturin>=1.5,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "py_fastmath"
+version = "0.1.0"
+description = "Rust acceleration extensions for Pythonistas in medical imaging and robotics"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20",
+]
+
+[tool.maturin]
+manifest-path = "crates/03-py-fastmath/Cargo.toml"
+module-name = "py_fastmath"
+features = ["pyo3/extension-module"]

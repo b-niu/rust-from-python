@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/01-basics",
+    "crates/02-performance",
+    "crates/03-py-fastmath",
+    "crates/06-engineering",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name"]
+license = "MIT"
+
+[workspace.dependencies]
+# 数值计算与并行
+ndarray = "0.16"
+rayon = "1.10"
+
+# Python 互操作
+pyo3 = { version = "0.23", features = ["extension-module"] }
+numpy = "0.23"
+
+# 基准测试与工具
+criterion = "0.5"
+anyhow = "1.0"

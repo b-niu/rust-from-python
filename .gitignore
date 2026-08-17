@@ -1,0 +1,23 @@
+# Rust 编译产物
+/target
+Cargo.lock
+**/*.rs.bk
+
+# Python 虚拟环境与编译缓存
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyd
+*.so
+dist/
+build/
+*.egg-info/
+.maturin/
+
+# IDE 与操作系统临时文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.env

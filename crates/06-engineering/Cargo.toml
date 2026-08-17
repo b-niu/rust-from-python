@@ -1,0 +1,15 @@
+[package]
+name = "stage06-engineering"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+
+[dev-dependencies]
+criterion.workspace = true
+
+[[bench]]
+name = "benchmark_main"
+harness = false
